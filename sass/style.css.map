@@ -1,8 +1,14 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AIAA,OAAO,CAAC,sEAAI;AACZ,OAAO,CAAC,kHAAI;AEDZ,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAC1B",
     "sources": [
-        "style.scss"
+        "style.scss",
+        "utils/_variables.scss",
+        "utils/_mixins.scss",
+        "components/_buttons.scss",
+        "base/_typography.scss",
+        "layout/_footer.scss",
+        "layout/_header.scss"
     ],
     "names": [],
     "file": "style.css"
