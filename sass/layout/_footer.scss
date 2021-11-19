@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #2E2E2E;
+    padding: 20px;
+    &__logo {
+        font-family: $font-title;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+    &__list {
+        li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        i {
+            font-size: 0.8rem;
+            margin-right: 10px;
+            width: 1rem;
+        }
+        a {
+            color: white;
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}

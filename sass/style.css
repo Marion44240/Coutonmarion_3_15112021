@@ -27,6 +27,44 @@ ul {
   list-style-type: none;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  background-color: #2E2E2E;
+  padding: 20px;
+}
+
+.footer__logo {
+  font-family: "Shrikhand", cursif;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.footer__list li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.footer__list i {
+  font-size: 0.8rem;
+  margin-right: 10px;
+  width: 1rem;
+}
+
+.footer__list a {
+  color: white;
+}
+
+.footer__list a:hover {
+  font-weight: bold;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
