@@ -28,6 +28,34 @@ ul {
   list-style-type: none;
 }
 
+.loader {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  -webkit-animation: loader 3s linear both;
+          animation: loader 3s linear both;
+}
+
+.loader span {
+  font-size: 250%;
+  font-family: "Shrikhand", cursif;
+  text-shadow: 1px 2px #9356DC, 2px 4px #FF79DA;
+  -webkit-animation: ohmyfood 3s none;
+          animation: ohmyfood 3s none;
+  text-align: center;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,5 +110,45 @@ header a {
 
 .footer__list a:hover {
   font-weight: bold;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes ohmyfood {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.2);
+            transform: rotate(0deg) scale(0.2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes ohmyfood {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.2);
+            transform: rotate(0deg) scale(0.2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

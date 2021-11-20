@@ -1,0 +1,18 @@
+.loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    animation: loader 3s linear both;
+    span {
+        font-size: 250%;
+        font-family: $font-title;
+        text-shadow: (1px 2px $color-primary, 2px 4px $color-secondary);
+        animation: ohmyfood 3s none;
+        text-align: center;
+    }
+}
