@@ -74,6 +74,15 @@ header a {
   left: 0.5rem;
 }
 
+.search__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
