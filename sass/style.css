@@ -81,6 +81,52 @@ header a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #eaeaea;
+  padding: 1rem;
+}
+
+.search__form i {
+  width: 1rem;
+}
+
+.search__form input {
+  background-color: transparent;
+  border: none;
+}
+
+.search__form ::-webkit-input-placeholder {
+  color: black;
+  font-size: 120%;
+}
+
+.search__form :-ms-input-placeholder {
+  color: black;
+  font-size: 120%;
+}
+
+.search__form ::-ms-input-placeholder {
+  color: black;
+  font-size: 120%;
+}
+
+.search__form ::placeholder {
+  color: black;
+  font-size: 120%;
+}
+
+.search__explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  padding: 2rem;
 }
 
 .footer {
