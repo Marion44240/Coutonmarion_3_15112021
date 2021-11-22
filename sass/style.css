@@ -67,13 +67,24 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding: 0.8rem;
+  -webkit-box-shadow: 0px 2px 8px #b3b0b0;
+          box-shadow: 0px 2px 8px #b3b0b0;
 }
 
 header a {
   position: absolute;
-  left: 0.5rem;
+  left: 1.5rem;
+  top: 1.4rem;
+  font-size: 1.2rem;
 }
 
+header img {
+  margin-top: 0.5rem;
+  width: 10rem;
+}
+
+/** section recherche **/
 .search__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,12 +97,13 @@ header a {
 }
 
 .search__form i {
-  width: 1rem;
+  width: 1.5rem;
 }
 
 .search__form input {
   background-color: transparent;
   border: none;
+  width: 8rem;
 }
 
 .search__form ::-webkit-input-placeholder {
@@ -127,6 +139,13 @@ header a {
           align-items: center;
   background-color: #f6f6f6;
   padding: 2rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.search__explore h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .footer {
