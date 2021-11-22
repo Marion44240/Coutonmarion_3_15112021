@@ -1,0 +1,3 @@
+@mixin button($from, $to) {
+  background: linear-gradient($from, $to);
+  }
