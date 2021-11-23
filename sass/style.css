@@ -80,8 +80,8 @@ button {
   cursor: pointer;
   font-weight: 600;
   margin-top: 1rem;
-  -webkit-box-shadow: 0px 2px 8px #b3b0b0;
-          box-shadow: 0px 2px 8px #b3b0b0;
+  -webkit-box-shadow: 2px 6px 8px #b3b0b0;
+          box-shadow: 2px 6px 8px #b3b0b0;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
 }
@@ -89,8 +89,10 @@ button {
 button:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff98e2), to(#a36fe1));
   background: linear-gradient(#ff98e2, #a36fe1);
-  -webkit-box-shadow: 3px 5px 8px #b3b0b0;
-          box-shadow: 3px 5px 8px #b3b0b0;
+  -webkit-box-shadow: 3px 7px 9px #9a9696;
+          box-shadow: 3px 7px 9px #9a9696;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .loader {
@@ -265,13 +267,15 @@ header img {
 
 /** section restaurants **/
 .resto {
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   padding: 3rem 1.5rem;
 }
 
 .resto__card {
   position: relative;
   background-color: white;
+  -webkit-box-shadow: 2px 6px 8px #b3b0b0;
+          box-shadow: 2px 6px 8px #b3b0b0;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -280,7 +284,10 @@ header img {
 }
 
 .resto img {
-  height: 10rem;
+  height: 11rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {

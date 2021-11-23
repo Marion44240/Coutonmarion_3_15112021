@@ -6,10 +6,12 @@ button {
     cursor: pointer;
     font-weight: $bold;
     margin-top: 1rem;
-    box-shadow: 0px 2px 8px $color-box-shadow;
+    box-shadow: 2px 6px 8px $color-box-shadow;
     @include button($color-secondary, $color-primary);
+    
     &:hover{
         @include button(lighten($color-secondary,6), lighten($color-primary,6));
-        box-shadow: 3px 5px 8px $color-box-shadow;
+        box-shadow: 3px 7px 9px darken($color-box-shadow, 10%);
+        transition: all 0.4s ease-out;
     }
 }
