@@ -15,6 +15,9 @@
             background-color: transparent;
             border: none;
             width: 8rem;
+            &:focus-visible {
+                outline: none;
+            }
         }
 
         ::placeholder {
@@ -139,32 +142,31 @@
     width: 30px;
     height: 24px;
     cursor: pointer;
-
-    i {
+    
+    &__empty {
         position: absolute;
         font-size: 1.5rem;
-    }
-    
-    &__empty{
         background: black;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    &:hover .heart__empty {
+        @include button($color-primary, $color-secondary);
+        -webkit-background-clip: text;   
+    }
     
-    &__full{
-        transition: all 0.3s;
+    &__full {
+        position: absolute;
+        font-size: 1.5rem;
+        transition: all 1.5s;
         @include button($color-primary, $color-secondary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-         transform: scale(0);
-    }  
-        
-    &:hover .heart__full{
-        transform: scale(1);
+        transform: scale(0);
     }
-        
-    &:hover .heart__empty{
-        @include button($color-primary, $color-secondary);
-        -webkit-background-clip: text;   
+
+    &:hover .heart__full {
+        transform: scale(1);
     }
 }

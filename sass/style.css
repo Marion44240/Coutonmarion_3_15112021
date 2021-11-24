@@ -144,6 +144,10 @@ header img {
   width: 8rem;
 }
 
+.search__form input:focus-visible {
+  outline: none;
+}
+
 .search__form ::-webkit-input-placeholder {
   color: black;
   font-size: 120%;
@@ -298,20 +302,25 @@ header img {
   cursor: pointer;
 }
 
-.heart i {
+.heart__empty {
   position: absolute;
   font-size: 1.5rem;
-}
-
-.heart__empty {
   background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.heart:hover .heart__empty {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+}
+
 .heart__full {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  position: absolute;
+  font-size: 1.5rem;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -323,12 +332,6 @@ header img {
 .heart:hover .heart__full {
   -webkit-transform: scale(1);
           transform: scale(1);
-}
-
-.heart:hover .heart__empty {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
 }
 
 /** Image présentation pages menu **/
@@ -358,7 +361,7 @@ header img {
   background-color: #f6f6f6;
   border-radius: 50px 50px 0 0;
   padding: 1rem;
-  top: -50px;
+  margin-top: -50px;
 }
 
 .menu__title {
