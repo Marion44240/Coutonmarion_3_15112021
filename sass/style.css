@@ -1,45 +1,6 @@
-/** loader spinner **/
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2? family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-@-webkit-keyframes loader {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
-@keyframes loader {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
-
-@-webkit-keyframes ohmyfood {
-  0% {
-    -webkit-transform: rotate(0deg) scale(0.2);
-            transform: rotate(0deg) scale(0.2);
-  }
-  100% {
-    -webkit-transform: rotate(360deg) scale(1);
-            transform: rotate(360deg) scale(1);
-  }
-}
-
-@keyframes ohmyfood {
-  0% {
-    -webkit-transform: rotate(0deg) scale(0.2);
-            transform: rotate(0deg) scale(0.2);
-  }
-  100% {
-    -webkit-transform: rotate(360deg) scale(1);
-            transform: rotate(360deg) scale(1);
-  }
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -57,6 +18,16 @@ html, body {
 
 h2 {
   margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+h3 {
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 90%;
 }
 
 a {
@@ -268,7 +239,6 @@ header img {
 
 .function__button p {
   font-weight: 600;
-  font-size: 90%;
 }
 
 /** section restaurants **/
@@ -316,34 +286,30 @@ header img {
 
 .resto__text {
   padding: 0.8rem;
-  height: 4rem;
 }
 
-.resto__text h3 {
-  margin-bottom: 4px;
-  font-size: 1rem;
-}
-
-.resto .heart {
+/** Animation logo coeur **/
+.heart {
   position: absolute;
   bottom: 1.5rem;
-  right: 1.5rem;
+  right: 1rem;
   width: 30px;
   height: 24px;
+  cursor: pointer;
 }
 
-.resto .heart i {
+.heart i {
   position: absolute;
   font-size: 1.5rem;
 }
 
-.resto .heart__empty {
+.heart__empty {
   background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.resto .heart__full {
+.heart__full {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
@@ -354,15 +320,83 @@ header img {
           transform: scale(0);
 }
 
-.resto .heart:hover .heart__full {
+.heart:hover .heart__full {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.resto .heart:hover .heart__empty {
+.heart:hover .heart__empty {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
+}
+
+/** Image présentation pages menu **/
+.heading__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.heading__image img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/** Section Menu pages **/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  padding: 1rem;
+  top: -50px;
+}
+
+.menu__title {
+  font-family: "Shrikhand", cursif;
+  font-weight: 400;
+  padding: 1rem 0.5rem;
+}
+
+.menu .heart {
+  top: 2.3rem;
+  right: 1.8rem;
+}
+
+.menu__container--title {
+  font-weight: 100;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  margin: 1rem 0;
+}
+
+.menu__container--title::after {
+  content: "";
+  display: block;
+  margin-top: 6px;
+  width: 45px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+
+.menu__anim {
+  background-color: white;
+  width: 100%;
+  height: 4.5rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 3px 5px #b3b0b0;
+          box-shadow: 2px 3px 5px #b3b0b0;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer {
@@ -401,5 +435,45 @@ header img {
 
 .footer__list a:hover {
   font-weight: bold;
+}
+
+/** loader spinner **/
+@-webkit-keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes ohmyfood {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.2);
+            transform: rotate(0deg) scale(0.2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes ohmyfood {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.2);
+            transform: rotate(0deg) scale(0.2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */
