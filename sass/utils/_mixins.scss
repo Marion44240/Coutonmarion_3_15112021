@@ -1,3 +1,8 @@
 @mixin button($from, $to) {
   background: linear-gradient($from, $to);
   }
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
