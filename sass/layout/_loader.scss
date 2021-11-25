@@ -1,3 +1,4 @@
+/** loader spinner **/
 .loader {
     @include size(100%, 100%);
     display: flex;
@@ -7,6 +8,7 @@
     position: fixed;
     z-index: 999;
     animation: loader 3s linear both;
+
     span {
         font-size: 250%;
         font-family: $font-title;
