@@ -1,30 +1,24 @@
 /** Image présentation pages menu **/
-
 .heading__image {
-    display: flex;
-    
     img {
         width: 100%;
-        height: 300px;
+        max-height: 300px;
         object-fit: cover;
     }
 }
 
 /** Section Menu pages **/
-
 .menu {
-    display: flex;
-    flex-direction: column;
     position: relative;
     background-color: $color-background2;
     border-radius: 50px 50px 0 0;;
     padding: 1rem;
-    top: -50px;
+    margin-top: -50px;
 
     &__title {
         font-family: $font-title;
         font-weight: $normal;
-        padding: 1rem 0.5rem ;
+        padding: 1rem 0.3rem;
     }
 
     .heart {
@@ -32,32 +26,63 @@
         right: 1.8rem;
     }
 
+//articles
     &__container {
-
+        display: flex;
+        flex-direction: column;
+        
         &--title {
             font-weight: $logo;
             font-size: 1rem;
-            padding: 0 0.5rem;
+            padding: 0 0.3rem;
             margin: 1rem 0;
 
             &::after {
                 content: "";
                 display: block;
                 margin-top: 6px;
-                width: 45px;
-                height: 3px;
                 background-color: $color-tertiary;
+                @include size (45px, 3px)
             }
         }
     }
 
     &__anim {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
         background-color: white;
-        width: 100%;
-        height: 4.5rem;
-        border-radius: 20px;
-        box-shadow: 2px 3px 5px $color-box-shadow;
-        padding: 1rem;
         margin-bottom: 1rem;
+        border-radius: 15px;
+        box-shadow: 2px 3px 5px $color-box-shadow;
+        overflow: hidden;
+        
+        &--text {
+            display: flex;
+            flex-direction: column;
+            padding: 0.8rem 0.5rem;
+            width: 50px;
+            flex: 2;  
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        span {
+            padding-bottom: 0.8rem;
+            margin-right: 1rem;
+        }
+
+        &--check-icone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-tertiary;
+            @include size (0, 65px);
+
+            i {
+                color: white;
+                overflow: hidden;
+            }
+        }
     }
 }
