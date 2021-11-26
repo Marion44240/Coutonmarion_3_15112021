@@ -56,6 +56,17 @@
         border-radius: 15px;
         box-shadow: 2px 3px 5px $color-box-shadow;
         overflow: hidden;
+        cursor: pointer;
+        animation: menu 800ms ease backwards;
+
+        &:hover .menu__anim--check-icone {
+            transition: width 0.4s ease-in-out;
+            width: 60px;
+            i{
+                font-size: 1.2rem;
+                animation: rotate 0.4s 0.3s;
+            }
+        }
         
         &--text {
             display: flex;
@@ -77,12 +88,19 @@
             justify-content: center;
             align-items: center;
             background-color: $color-tertiary;
-            @include size (0, 65px);
+            color: white;
+            @include size (0, 66px);      
+        }
+    }
 
-            i {
-                color: white;
-                overflow: hidden;
-            }
+    /** bouton **/
+    
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0 2rem;
+        button {
+            width: 10rem;
         }
     }
 }
