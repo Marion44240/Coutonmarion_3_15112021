@@ -353,48 +353,6 @@ header img {
   padding: 0.8rem;
 }
 
-/** Animation logo coeur **/
-.heart {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 1rem;
-  cursor: pointer;
-  width: 30px;
-  height: 24px;
-}
-
-.heart__empty {
-  position: absolute;
-  font-size: 1.5rem;
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.heart:hover .heart__empty {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-}
-
-.heart__full {
-  position: absolute;
-  font-size: 1.5rem;
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-
-.heart:hover .heart__full {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
 /** Image présentation pages menu **/
 .heading__image img {
   width: 100%;
@@ -592,6 +550,48 @@ header img {
 
 .footer__list a:hover {
   opacity: 0.7;
+}
+
+/** Animation logo coeur **/
+.heart {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1rem;
+  cursor: pointer;
+  width: 30px;
+  height: 24px;
+}
+
+.heart__empty {
+  position: absolute;
+  font-size: 1.5rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart:hover .heart__empty {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+}
+
+.heart__full {
+  position: absolute;
+  font-size: 1.5rem;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.heart:hover .heart__full {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /** loader spinner **/
