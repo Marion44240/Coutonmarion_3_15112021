@@ -10,25 +10,25 @@
 /** Média Queries **/
 
 @mixin media-xs {
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 360px) {
     @content;
   }
 }
 
 @mixin media-s {
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 660px) {
     @content;
   }
 }
 
 @mixin media-m {
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 992px) {
     @content;
   }
 }
 
 @mixin media-l {
-  @media screen and (max-width: 1440px) {
+  @media screen and (min-width: 1024px) {
     @content;
   }
 }
