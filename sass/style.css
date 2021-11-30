@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /** Média Queries **/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2? family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,8 +30,8 @@ h3 {
 }
 
 p {
-  opacity: 0.9;
   font-size: 90%;
+  font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -56,7 +56,7 @@ button {
   border-radius: 25px;
   color: white;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 1rem;
   -webkit-box-shadow: 2px 6px 8px #b3b0b0;
           box-shadow: 2px 6px 8px #b3b0b0;
@@ -249,10 +249,10 @@ header img {
 
 .function__button span {
   position: absolute;
-  font-weight: 300;
+  font-weight: 400;
   left: -0.6rem;
   top: 1.3rem;
-  padding: 4px 9px;
+  padding: 4px 8px;
   background-color: #9356DC;
   border-radius: 50%;
   color: white;
@@ -279,7 +279,7 @@ header img {
 }
 
 .function__button p {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /** section restaurants **/
@@ -344,7 +344,7 @@ header img {
   border-radius: 3px;
   color: #2c9c81;
   padding: 0.5rem;
-  font-weight: 600;
+  font-weight: 700;
   top: 1rem;
   right: 1rem;
 }
@@ -415,7 +415,7 @@ header img {
 }
 
 .menu__container--title {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1rem;
   padding: 0 0.3rem;
   margin: 1rem 0;
@@ -489,6 +489,7 @@ header img {
 }
 
 .menu__anim span {
+  font-size: 0.9rem;
   padding-bottom: 0.8rem;
   margin-right: 1rem;
 }
