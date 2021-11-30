@@ -368,13 +368,23 @@ header img {
   border-radius: 50px 50px 0 0;
   padding: 1rem;
   margin-top: -50px;
-  /** bouton **/
 }
 
 .menu__title {
   font-family: "Shrikhand", cursif;
   font-weight: 400;
   padding: 1rem 0.3rem;
+}
+
+@media screen and (min-width: 992px) {
+  .menu__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .menu .heart {
@@ -392,11 +402,31 @@ header img {
           flex-direction: column;
 }
 
+@media screen and (min-width: 992px) {
+  .menu__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+}
+
 .menu__container--title {
   font-weight: 100;
   font-size: 1rem;
   padding: 0 0.3rem;
   margin: 1rem 0;
+}
+
+@media screen and (min-width: 992px) {
+  .menu__container--title {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+  }
 }
 
 .menu__container--title::after {
@@ -437,8 +467,8 @@ header img {
 
 .menu__anim:hover .menu__anim--check-icone i {
   font-size: 1.2rem;
-  -webkit-animation: rotate 0.4s 0.3s;
-          animation: rotate 0.4s 0.3s;
+  -webkit-animation: rotate 0.4s 0.1s;
+          animation: rotate 0.4s 0.1s;
 }
 
 .menu__anim--text {
@@ -513,6 +543,7 @@ header img {
     display: grid;
     -ms-grid-columns: 1fr 3fr;
         grid-template-columns: 1fr 3fr;
+    padding-top: 2rem;
   }
 }
 
@@ -527,15 +558,21 @@ header img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
 .footer__list li {
   margin-bottom: 10px;
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 992px) {
+  .footer__list li {
+    margin-right: 2rem;
+  }
 }
 
 .footer__list i {

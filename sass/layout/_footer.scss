@@ -8,6 +8,7 @@
     @include media-m {
         display: grid;
         grid-template-columns: 1fr 3fr;
+        padding-top: 2rem;
     }
 
     &__logo {
@@ -19,11 +20,14 @@
     &__list {
         @include media-m {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
         }
         li {
             margin-bottom: 10px;
             font-size: 0.9rem;
+            @include media-m {
+                margin-right: 2rem;
+            }
         }
         i {
             font-size: 0.8rem;
